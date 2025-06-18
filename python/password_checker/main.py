@@ -9,13 +9,11 @@ def check_password():
     lower_count = sum(1 for c in password if c.islower())
     upper_count = sum(1 for c in password if c.isupper())
     num_count = sum(1 for c in password if c.isdigit())
-    wspace_count = sum(1 for c in password if c.isspace())
     special_count = sum(1 for c in password if c in string.punctuation)
 
     strength += bool(lower_count)
     strength += bool(upper_count)
     strength += bool(num_count)
-    strength += bool(wspace_count)
     strength += bool(special_count)
 
     remarks_dict = {
@@ -32,7 +30,6 @@ def check_password():
     print(f" {lower_count} lowercase character")
     print(f" {upper_count} uppercase character")
     print(f" {num_count} numeric character")
-    print(f" {wspace_count} whitespace character")
     print(f" {special_count} special character")
 
     print(f"\nPassword Strength: {strength}/5")
