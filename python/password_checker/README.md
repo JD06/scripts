@@ -1,4 +1,6 @@
-```The script checks for the paswword strength given
+```
+The script checks for the paswword strength and the purpose of the code below:
+
 1. Takes input without showing it on screen.
 2. Analyzes password contents (lowercase, uppercase, digits, spaces, special characters).
 3. Rates password strength on a scale of 1 to 5
